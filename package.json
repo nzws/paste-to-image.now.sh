@@ -1,0 +1,39 @@
+{
+  "name": "@nzws/paste-to-image",
+  "version": "1.0.0",
+  "author": "nzws <dev@nzws.me>",
+  "license": "MIT",
+  "repository": "https://github.com/nzws/paste-to-image.git",
+  "homepage": "https://github.com/nzws/paste-to-image",
+  "private": true,
+  "scripts": {
+    "lint:prettier": "prettier --check --ignore-path .gitignore .",
+    "lint:eslint": "eslint --cache --ignore-path .gitignore \"**/*.{ts,js}\"",
+    "lint:ts": "tsc",
+    "lint": "npm-run-all lint:* -s",
+    "format:prettier": "prettier --write --ignore-path .gitignore .",
+    "format:ts": "eslint --cache --fix --ignore-path .gitignore \"**/*.{ts,js}\"",
+    "format": "npm-run-all format:* -s",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@nzws/prettier-config": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "@yuzulabo/eslint-config": "^1.0.1",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "~7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "npm-run-all": "~4",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5"
+  },
+  "prettier": "@nzws/prettier-config"
+}
