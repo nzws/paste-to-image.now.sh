@@ -15,7 +15,7 @@
     "format:ts": "eslint --cache --fix --ignore-path .gitignore \"**/*.{ts,js}\"",
     "format": "npm-run-all format:* -s",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html -d public"
   },
   "dependencies": {
     "react": "^16.13.1",
